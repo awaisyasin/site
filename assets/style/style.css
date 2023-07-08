@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(215, 215, 215);
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 85vw;
+    height: 100vh;
+    margin: 0 90px;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: pink; */
+    height: 50vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.devPic img {
+    height: 50vh;
+}
+
+.hello {
+    font-size: 65px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.about {
+    font-size: 40px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.moreabout {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 23px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: dodgerblue;
+    background-color: white;
+}
+
+/* Contact Form */
+
+.contactForm {
+    padding: 0 34px;
+    padding-top: 144px;
+    margin: 0px 88px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contactForm h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactForm form div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.contactForm form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.btn {
+    width: 120px;
+}
+
+/* Blog */
+
+.blogContainer {
+    margin: 88px 88px;
+}
+
+.blogItem {
+    margin: 30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogContainer h1 {
+    margin: 30px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* My Intro */
+
+.devInfo {
+    font-family: 'Fira Sans', sans-serif;
+}
+.devInfo h1 {
+    font-family: 'Source Code Pro', monospace;
+    margin: 10px 0;
+}
+.devInfo h2 {
+    font-family: 'Source Code Pro', monospace;
+    margin: 20px 0;
+}
+.devInfo p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.hundred {
+    width: 265px;
+    background-color: rgb(0, 255, 0);
+}
+.seventyFive {
+    width: 200px;
+    background-color: greenyellow;
+}
+.fifty {
+    width: 150px;
+    background-color: red;
+}
+.twentyFive {
+    width: 90px;
+    background-color: crimson;
+}
+
+.sidebarGo {
+    position: absolute;
+    transform: translateX(-435px);
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross {
+    margin-left: 190px;
+    margin-top: 10px;
+}
+
+@media (max-width:1245px) {
+    *{
+        /* background-color: rgb(234, 86, 86); */
+    }
+    .main {
+        margin: 0;
+    }
+    .devPic {
+        display: none;
+    }
+    .intro, .blogContainer, .contactForm {
+        margin: 0px 8px;
+        padding-top: 88px;
+    }
+    .contactForm form div input {
+        width: 70vw
+    }
+}
